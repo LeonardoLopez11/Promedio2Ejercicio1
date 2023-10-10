@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proyectilP: {fileID: 4892646507078194900}
   PosicionPlayer: {fileID: 0}
-  velocidadProyectil: 2
+  velocidadProyectil: 1
 --- !u!54 &-8142039891520100699
 Rigidbody:
   m_ObjectHideFlags: 0
