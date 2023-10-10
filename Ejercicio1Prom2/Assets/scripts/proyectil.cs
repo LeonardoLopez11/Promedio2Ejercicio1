@@ -6,7 +6,7 @@ public class proyectil : MonoBehaviour
 {
     public GameObject proyectilP;
     public Transform PosicionPlayer;
-
+    public float velocidadProyectil = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +25,12 @@ public class proyectil : MonoBehaviour
 
     void Disparar()
     {
+
         GameObject proyectil = Instantiate(proyectilP, PosicionPlayer.position, PosicionPlayer.rotation);
         Rigidbody rb = proyectil.GetComponent<Rigidbody>();
-        rb.velocity = transform.forward * 5;
+        Vector3 direcciónDeDisparo = PosicionPlayer.forward;
+        rb.velocity = direcciónDeDisparo * velocidadProyectil;
+
 
         Destroy(proyectil, 1f);
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 473875246894504100}
   - component: {fileID: 5860507211551644905}
   - component: {fileID: 4699816303548467298}
+  - component: {fileID: -8142039891520100699}
   m_Layer: 0
   m_Name: proyectil
   m_TagString: Untagged
@@ -28,12 +29,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4892646507078194900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.64, z: -6.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.3978, z: -6.3322}
+  m_LocalScale: {x: 0.5155, y: 0.5155, z: 0.5155}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7807362172121704590
 MeshFilter:
@@ -119,4 +120,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proyectilP: {fileID: 4892646507078194900}
-  PosicionPlayer: {fileID: 4154581709497195556, guid: aba9501f462a4bf43a6af2b9811e0680, type: 3}
+  PosicionPlayer: {fileID: 0}
+  velocidadProyectil: 2
+--- !u!54 &-8142039891520100699
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4892646507078194900}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
