@@ -6,10 +6,12 @@ public class player : MonoBehaviour
 {
     public float velocidad = 5.0f; 
     private Rigidbody rb;
-
+    private int level = 1; 
     
     void Start()
     {
+        StartCoroutine(AumentodeNivel());
+
         rb = GetComponent<Rigidbody>();
     }
 
@@ -23,4 +25,21 @@ public class player : MonoBehaviour
         rb.velocity = movimiento * velocidad;
 
     }
+
+    void SubirNivel() {
+        level++;
+        Debug.Log(" Se subió de nivel " + level);
+    
+    
+    }
+
+    IEnumerator AumentodeNivel()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10f);
+            SubirNivel();
+        }
+    }
+
 }
