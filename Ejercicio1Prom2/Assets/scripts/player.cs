@@ -6,8 +6,9 @@ public class player : MonoBehaviour
 {
     public float velocidad = 5.0f; 
     private Rigidbody rb;
-    private int level = 1; 
-    
+    private int level = 1;
+    public float velocidadProyectil = 1.0f;
+
     void Start()
     {
         StartCoroutine(AumentodeNivel());
@@ -29,8 +30,8 @@ public class player : MonoBehaviour
     void SubirNivel() {
         level++;
         Debug.Log(" Se subió de nivel " + level);
-    
-    
+        velocidadProyectil += 1.0f;
+        Debug.Log("Se aumentó la velocidad de disparo a" + velocidadProyectil);
     }
 
     IEnumerator AumentodeNivel()
