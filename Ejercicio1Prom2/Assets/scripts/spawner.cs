@@ -37,7 +37,7 @@ public class spawner : MonoBehaviour
             Debug.Log("Se aumentó la velocidad de los enemigos a" + enemy.velocidadMovimiento);
             for (int i = 0; i < cantidadEnemigosNivel; i++)
             {
-                SpawnEnemigos();
+                SpawnEnemigo();
             }
         }
     }
