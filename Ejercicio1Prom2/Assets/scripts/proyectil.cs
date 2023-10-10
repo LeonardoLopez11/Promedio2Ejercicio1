@@ -6,7 +6,7 @@ public class proyectil : MonoBehaviour
 {
     public GameObject proyectilP;
     public Transform PosicionPlayer;
-    public float velocidadProyectil = 1.0f;
+    public float velocidadProyectil = 1;
 
     // Start is called before the first frame update
     void Start()

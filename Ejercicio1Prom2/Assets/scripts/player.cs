@@ -7,7 +7,7 @@ public class player : MonoBehaviour
     public float velocidad = 5.0f; 
     private Rigidbody rb;
     private int level = 1;
-    public float velocidadProyectil = 1.0f;
+    public float velocidadProyectil = 1;
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class player : MonoBehaviour
     void SubirNivel() {
         level++;
         Debug.Log(" Se subió de nivel " + level);
-        velocidadProyectil += 1.0f;
+        velocidadProyectil += 1;
         Debug.Log("Se aumentó la velocidad de disparo a" + velocidadProyectil);
     }
 
