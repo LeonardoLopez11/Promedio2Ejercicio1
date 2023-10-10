@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class spawner : MonoBehaviour
 {
+   
     private enemy enemy;
     public GameObject Enemigo;
     private int nivel = 1;
@@ -35,6 +36,8 @@ public class spawner : MonoBehaviour
             cantidadEnemigosNivel++;
             enemy.velocidadMovimiento += aumentoVelocidad;
             Debug.Log("Se aumentó la velocidad de los enemigos a" + enemy.velocidadMovimiento);
+
+            
             for (int i = 0; i < cantidadEnemigosNivel; i++)
             {
                 SpawnEnemigo();
